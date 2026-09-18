@@ -51,11 +51,11 @@ BOARD_SUPPORTS_SOUND_TRIGGER := true
 BOARD_USES_ALSA_AUDIO := true
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := holi
+TARGET_BOOTLOADER_BOARD_NAME := blair
 
 # Display
 TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE := true
-TARGET_SCREEN_DENSITY := 450
+TARGET_SCREEN_DENSITY := 395
 
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
@@ -73,34 +73,13 @@ DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
 ODM_MANIFEST_FILES := $(COMMON_PATH)/manifest_odm.xml
 
 # Kernel
-BOARD_BOOT_HEADER_VERSION := 3
-BOARD_KERNEL_BASE := 0x00000000
-BOARD_KERNEL_CMDLINE := \
-    androidboot.hardware=qcom \
-    androidboot.memcg=1 \
-    androidboot.usbcontroller=4e00000.dwc3 \
-    cgroup.memory=nokmem,nosocket \
-    loop.max_part=7 \
-    lpm_levels.sleep_disabled=1 \
-    msm_rtb.filter=0x237 \
-    reboot=panic_warm \
-    service_locator.enable=1 \
-    swiotlb=0 \
-    iptable_raw.raw_before_defrag=1 \
-    ip6table_raw.raw_before_defrag=1
-BOARD_KERNEL_IMAGE_NAME := Image
-BOARD_KERNEL_PAGESIZE := 4096
-BOARD_KERNEL_SEPARATED_DTBO := true
+BOARD_BOOT_HEADER_VERSION := 4
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_RAMDISK_USE_LZ4 := true
-TARGET_KERNEL_SOURCE := kernel/oneplus/sm6375
-TARGET_KERNEL_CONFIG := vendor/holi-qgki_defconfig vendor/debugfs.config
-TARGET_KERNEL_NO_GCC := true
 
-# Kernel modules
-BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(COMMON_PATH)/modules.blocklist
-BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load))
-TARGET_MODULE_ALIASES += wlan.ko:qca_cld3_wlan.ko
+# Init Boot
+BOARD_INIT_BOOT_HEADER_VERSION := 4
+BOARD_MKBOOTIMG_INIT_ARGS += --header_version $(BOARD_INIT_BOOT_HEADER_VERSION)
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
@@ -108,10 +87,10 @@ BOARD_USES_METADATA_PARTITION := true
 # Partitions
 BOARD_PRODUCTIMAGE_MINIMAL_PARTITION_RESERVED_SIZE := false
 -include vendor/lineage/config/BoardConfigReservedSize.mk
-BOARD_BOOTIMAGE_PARTITION_SIZE := 167772160
+BOARD_BOOTIMAGE_PARTITION_SIZE := 201326592
 BOARD_DTBOIMG_PARTITION_SIZE := 25165824
-BOARD_USERDATAIMAGE_PARTITION_SIZE := 113600311296
-BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 167772160
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 239781081088
+BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 201326592
 BOARD_ODMIMAGE_FILE_SYSTEM_TYPE := erofs
 BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_SYSTEM_EXTIMAGE_FILE_SYSTEM_TYPE := ext4
@@ -128,7 +107,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 
 # Platform
-TARGET_BOARD_PLATFORM := holi
+TARGET_BOARD_PLATFORM := blair
 
 # Properties
 TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
@@ -161,7 +140,7 @@ include hardware/oplus/sepolicy/qti/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
 # Vendor Security patch level
-BOOT_SECURITY_PATCH := 2026-07-01
+BOOT_SECURITY_PATCH := 2026-08-01
 VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
 
 # Verified Boot
