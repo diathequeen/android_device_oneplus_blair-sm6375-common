@@ -23,10 +23,7 @@ odm/lib/rfsa/adsp/libcalculator_skel.so
 odm/lib/rfsa/adsp/libhdr_skel.so
 odm/lib/rfsa/adsp/libhvxFaceBeautyPre_skel.so
 odm/lib/rfsa/adsp/libktveffect.so
-<<<<<<< HEAD
 odm/lib/rfsa/adsp/libsnpe_dsp_domains_skel.so
-=======
->>>>>>> 4b64f68 (sm6375-common: small changes to blobs list)
 odm/lib/rfsa/adsp/libsnpe_dsp_skel.so
 odm/lib/rfsa/adsp/libsnpe_dsp_domains_skel.so
 odm/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so
@@ -178,14 +175,11 @@ vendor/lib64/libwms.so
 vendor/lib64/libwqe.so
 vendor/lib64/libxml.so
 vendor/lib64/vendor.qti.data.factoryservice-V1-ndk.so
-<<<<<<< HEAD
-=======
 vendor/lib64/vendor.qti.hardware.data.dynamicddsaidlservice-V1-ndk.so
 vendor/lib64/vendor.qti.hardware.data.lceaidlservice-V1-ndk.so
 vendor/lib64/vendor.qti.hardware.data.flowaidlservice-V1-ndk.so
 vendor/lib64/vendor.qti.latencyaidlservice-V1-ndk.so
 vendor/lib64/vendor.qti.data.mwqemaidlservice-V1-ndk.so
->>>>>>> 4b64f68 (sm6375-common: small changes to blobs list)
 vendor/lib64/vendor.qti.data.slm@1.0.so
 vendor/lib64/vendor.qti.hardware.cacert@1.0.so
 vendor/lib64/vendor.qti.hardware.data.cneaidlservice.internal.api-V1-ndk.so
@@ -246,11 +240,8 @@ vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 vendor/etc/display/DPU9__.xml
 vendor/etc/display/DPU10__.xml
 vendor/etc/display/DPU660.xml
-<<<<<<< HEAD
-=======
 vendor/etc/display/DPU10__.xml
 vendor/etc/display/DPU9__.xml
->>>>>>> 4b64f68 (sm6375-common: small changes to blobs list)
 vendor/etc/display/advanced_sf_offsets.xml
 vendor/etc/display/thermallevel_to_fps.xml
 vendor/etc/clstc_config_library.xml
@@ -516,15 +507,12 @@ vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so
 vendor/lib64/vendor.qti.ims.rcssipaidlservice-V1-ndk.so
 vendor/lib64/vendor.qti.ims.rcsuceaidlservice-V1-ndk.so
 vendor/lib64/vendor.qti.ImsRtpService-aidl-Impl.so
-<<<<<<< HEAD
 vendor/lib64/vendor.qti.ImsRtpService-V1-ndk.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so
 vendor/lib64/vendor.qti.imsrtpservice@3.1.so
-=======
 vendor/lib64/vendor.qti.ImsRtpService-V1-ndk.so;MODULE_SUFFIX=-vendor
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so;MODULE_SUFFIX=-vendor
 vendor/lib64/vendor.qti.imsrtpservice@3.1.so;MODULE_SUFFIX=-vendor
->>>>>>> 4b64f68 (sm6375-common: small changes to blobs list)
 
 # Kernel
 vendor/bin/init.qti.kernel.sh
@@ -541,15 +529,12 @@ vendor/lib64/libqtikeymaster4.so
 vendor/bin/hw/android.hardware.security.keymint-service-qti
 vendor/etc/init/android.hardware.security.keymint-service-qti.rc
 vendor/etc/vintf/manifest/android.hardware.security.keymint-service-qti.xml
-<<<<<<< HEAD
 vendor/lib64/android.hardware.security.keymint-V1-ndk.so
 vendor/lib64/android.hardware.security.keymint-V2-ndk.so
 vendor/lib64/android.hardware.security.keymint-V3-ndk.so
-=======
 vendor/lib64/android.hardware.security.keymint-V1-ndk.so;MODULE_SUFFIX=-vendor
 vendor/lib64/android.hardware.security.keymint-V2-ndk.so;MODULE_SUFFIX=-vendor
 vendor/lib64/android.hardware.security.keymint-V3-ndk.so;MODULE_SUFFIX=-vendor
->>>>>>> 4b64f68 (sm6375-common: small changes to blobs list)
 vendor/lib64/libqtikeymint.so
 
 # Listen
@@ -624,13 +609,10 @@ vendor/lib64/libqmiservices.so
 
 # Radio
 odm/lib64/vendor.oplus.hardware.appradio@1.0.so
-<<<<<<< HEAD
 odm/lib64/vendor.oplus.hardware.communicationcenter-V1-ndk.so
 odm/lib64/vendor.oplus.hardware.communicationcenter-V2-ndk.so
-=======
 odm/lib64/vendor.oplus.hardware.communicationcenter-V1-ndk.so;MODULE_SUFFIX=-vendor
 odm/lib64/vendor.oplus.hardware.communicationcenter-V2-ndk.so;MODULE_SUFFIX=-vendor
->>>>>>> 4b64f68 (sm6375-common: small changes to blobs list)
 odm/lib64/vendor.oplus.hardware.ims@1.0.so
 odm/lib64/vendor.oplus.hardware.radio@1.0.so
 system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
@@ -733,11 +715,8 @@ vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.4.so
 vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.5.so
 vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.6.so
 vendor/lib64/vendor.qti.hardware.radio.qtiradioconfig-V4-ndk.so
-<<<<<<< HEAD
 # vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.7.so
-=======
 vendor/lib64/vendor.qti.hardware.radio.common-V1-ndk.so
->>>>>>> 4b64f68 (sm6375-common: small changes to blobs list)
 vendor/lib64/vendor.qti.hardware.radio.uim@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.uim@1.1.so
 vendor/lib64/vendor.qti.hardware.radio.uim@1.2.so
@@ -949,11 +928,9 @@ vendor/apex/com.google.android.widevine.nonupdatable.apex
 vendor/bin/hw/android.hardware.drm-service.clearkey
 vendor/etc/init/android.hardware.drm-service.clearkey.rc
 vendor/etc/vintf/manifest/android.hardware.drm-service.clearkey.xml
-<<<<<<< HEAD
 vendor/lib64/android.hardware.drm-V1-ndk.so
-=======
 vendor/lib64/android.hardware.drm-V1-ndk.so;MODULE_SUFFIX=-vendor
->>>>>>> 4b64f68 (sm6375-common: small changes to blobs list)
+
 
 # WiFi
 odm/bin/init.oplus.wifi.sh
