@@ -26,6 +26,10 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
+# Shipping API
+BOARD_SHIPPING_API_LEVEL := 34
+PRODUCT_SHIPPING_API_LEVEL := 34
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
@@ -315,10 +319,6 @@ $(call inherit-product, hardware/oplus/oplus-fwk/oplus-fwk.mk)
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors-service.multihal
-
-# Shipping API
-BOARD_SHIPPING_API_LEVEL := 30
-PRODUCT_SHIPPING_API_LEVEL := 31
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
